@@ -1,0 +1,8 @@
+# Old photos the site no longer uses (kept locally only)
+/photos/*.jpg
+/photos/portfolio/
+/photos/web/*.jpg
+/photos/thumb/*.jpg
+/photos/web/portfolio/
+/photos/thumb/portfolio/
+.DS_Store

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>JCM Pics | Sports Photography</title>
+  <meta name="description" content="JCM Pics: sports, senior and event photography in the Philadelphia area.">
+  <meta property="og:title" content="JCM Pics">
+  <meta property="og:description" content="Sports, senior and event photography.">
+  <meta property="og:image" content="photos/web/selects/46-pclsn-photos-1.jpg">
+  <meta name="theme-color" content="#0b0b0c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="nav" id="nav">
+    <a href="#top" class="logo" data-brand>JCM Pics</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="#book" class="nav-cta">Book</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <img class="hero-img" id="heroImg" alt="" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <h1 class="hero-title" data-brand>JCM Pics</h1>
+        <p class="hero-tagline" id="heroTagline"></p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-ghost">View work</a>
+          <a href="#book" class="btn">Book a shoot</a>
+        </div>
+      </div>
+      <a href="#work" class="scroll-cue" aria-label="Scroll to work"><span></span></a>
+    </section>
+
+    <section class="section" id="work">
+      <div class="section-head reveal">
+        <p class="eyebrow">Portfolio</p>
+        <h2>Selected work</h2>
+      </div>
+      <div class="filters reveal" id="filters" role="tablist" aria-label="Filter photos"></div>
+      <div class="masonry" id="gallery"></div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="about-photo reveal"><img id="aboutImg" alt="Photo by JCM Pics" loading="lazy"></div>
+      <div class="about-text reveal">
+        <p class="eyebrow">About</p>
+        <h2>Behind the lens</h2>
+        <div id="aboutBody"></div>
+        <dl class="stats" id="aboutStats"></dl>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="section-head reveal">
+        <p class="eyebrow">Services</p>
+        <h2>What I shoot</h2>
+      </div>
+      <div class="services" id="servicesList"></div>
+    </section>
+
+    <section class="section book reveal" id="book">
+      <h2 id="bookHeading"></h2>
+      <p id="bookText"></p>
+      <a class="btn btn-lg" id="bookBtn"></a>
+      <p class="book-alt" id="bookAlt"></p>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-head reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's talk</h2>
+      </div>
+      <ul class="contact-list reveal" id="contactList"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>&copy; <span id="year"></span> <span data-brand>JCM Pics</span></span>
+    <span id="footerLocation"></span>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <button class="lb-btn lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo">&#8249;</button>
+    <figure class="lb-stage" id="lbStage">
+      <img id="lbImg" alt="">
+    </figure>
+    <button class="lb-btn lb-next" id="lbNext" aria-label="Next photo">&#8250;</button>
+    <div class="lb-caption">
+      <span id="lbTitle"></span>
+      <span class="lb-meta"><span id="lbCount"></span><a id="lbLink" target="_blank" rel="noopener">Full gallery &rarr;</a></span>
+    </div>
+  </div>
+
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
